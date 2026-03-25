@@ -592,11 +592,20 @@ const customBooks = [
 const allBooks = customBooks;
 
 export default function Page() {
-  const [lang, setLang] = useState("en");
-const t = (key: any) => translations[lang][key];
-const tc = (cat: any) => categoryTranslations[lang][cat] || cat;
+const [lang, setLang] = useState<"en" | "pl">("en");
+
+type TranslationKey = keyof typeof translations["en"];
+type CategoryKey = keyof typeof categoryTranslations["en"];
+
+const t = (key: TranslationKey) => translations[lang][key];
+const tc = (cat: CategoryKey | string) =>
+  categoryTranslations[lang][cat as CategoryKey] || cat;
   const [filter, setFilter] = useState("All");
-  const [activeSample, setActiveSample] = useState(null);
+  type SampleType = {
+  samples: string[];
+};
+
+const [activeSample, setActiveSample] = useState<SampleType | null>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [offsetY, setOffsetY] = useState(0);
   const [showTop, setShowTop] = useState(false);
@@ -617,7 +626,7 @@ const tc = (cat: any) => categoryTranslations[lang][cat] || cat;
 
     const interval = setInterval(() => {
       setCurrentSlide((prev) =>
-        prev === activeSample.samples.length - 1 ? 0 : prev + 1
+        prev === (activeSample?.samples.length || 1) - 1 ? 0 : prev + 1
       );
     }, 2500);
 

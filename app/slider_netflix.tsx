@@ -64,7 +64,11 @@ const allBooks = customBooks;
 
 export default function Page() {
   const [filter, setFilter] = useState("All");
-  const [activeSample, setActiveSample] = useState(null);
+  type SampleType = {
+  samples: string[];
+};
+
+const [activeSample, setActiveSample] = useState<SampleType | null>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [offsetY, setOffsetY] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -82,7 +86,7 @@ export default function Page() {
 
     const interval = setInterval(() => {
       setCurrentSlide((prev) =>
-        prev === activeSample.samples.length - 1 ? 0 : prev + 1
+        prev === (activeSample?.samples.length || 1) - 1 ? 0 : prev + 1
       );
     }, 2500);
 
