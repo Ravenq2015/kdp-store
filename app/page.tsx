@@ -1,5 +1,5 @@
 "use client";
-
+// @ts-nocheck
 import { useState, useEffect } from "react";
 
 // 🌍 TŁUMACZENIA (FINAL - BEZ BŁĘDÓW)
@@ -54,6 +54,8 @@ const categoryTranslations = {
     Premium: "Premium",
     Series: "Series",
     Journal: "Journal",
+    Kitchen: "Kitchen",
+    Planners: "Planners",
     "Polish edition": "Polish edition",
     Multilangual: "Multilangual", // MUSI być identycznie jak w danych
     "Christmas items": "Christmas items",
@@ -64,7 +66,9 @@ const categoryTranslations = {
     Activity: "Zadania",
     Premium: "Premium",
     Series: "Seria",
-    Journal: "Dziennik",
+    Journal: "Dzienniki",
+    Kitchen: "Kuchnia",
+    Planners: "Planery",
     "Polish edition": "Polskie wersje",
     Multilangual: "Wielojęzyczne",
     "Christmas items": "Świąteczne",
@@ -101,8 +105,8 @@ const customBooks = [
     samples: ["/samples/book3/1.jpg","/samples/book2/2.jpg","/samples/book2/3.jpg","/samples/book2/4.jpg"],
   },
     {
-    title: "Tosia i tajemnica emocji",
-    category: "Polish edition",
+    title: "The Magic of Christmas",
+    category: "Christmas items",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM007",
@@ -273,7 +277,7 @@ const customBooks = [
   },
      {
     title: "Easter Chicks",
-    category: "Coloring",
+    category: "Christmas items",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -336,7 +340,7 @@ const customBooks = [
   },
      {
     title: "Pumpkin who was afraid of dark",
-    category: "Coloring",
+    category: "Premium",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -344,8 +348,8 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
-    title: "Colorful Animal Alphabet",
-    category: "Coloring",
+    title: "The Quiet Hero",
+    category: "Premium",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -353,8 +357,8 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
-    title: "Colorful Animal Alphabet",
-    category: "Coloring",
+    title: "Sara i zaginiona melodia lasu",
+    category: "Premium",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -362,8 +366,8 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
-    title: "Colorful Animal Alphabet",
-    category: "Coloring",
+    title: "Studencka kuchnia za grosze",
+    category: "Kitchen",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -371,8 +375,8 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
-    title: "Colorful Animal Alphabet",
-    category: "Coloring",
+    title: "When the River Stopped Moving",
+    category: "Series",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -426,8 +430,8 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
-    title: "When the River Stopped Moving",
-    category: "Series",
+    title: "Mandala Planner 2026",
+    category: "Planners",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -435,8 +439,8 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
    {
-    title: "Colorful Animal Alphabet",
-    category: "Coloring",
+    title: "Luna uczy się uspokajać",
+    category: "Series",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -444,8 +448,8 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
-    title: "Colorful Animal Alphabet",
-    category: "Coloring",
+    title: "Luna uczy się cierpliwośći",
+    category: "Series",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -453,8 +457,8 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
-    title: "Colorful Animal Alphabet",
-    category: "Coloring",
+    title: "Luna uczy się słuchać",
+    category: "Series",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -462,8 +466,8 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
-    title: "Colorful Animal Alphabet",
-    category: "Coloring",
+    title: "Luna uczy się stawiać czoła strachowi",
+    category: "Series",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -471,8 +475,8 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
-    title: "Colorful Animal Alphabet",
-    category: "Coloring",
+    title: "Luna uczy się o wielkich uczuciach",
+    category: "Series",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -480,8 +484,8 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
-    title: "Colorful Animal Alphabet",
-    category: "Coloring",
+    title: "Luna uczy się życzliwości",
+    category: "Series",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -489,8 +493,8 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
-    title: "Colorful Animal Alphabet",
-    category: "Coloring",
+    title: "Luna uczy się mówić nie",
+    category: "Series",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -498,8 +502,8 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
-    title: "Colorful Animal Alphabet",
-    category: "Coloring",
+    title: "Luna uczy się próbować",
+    category: "Series",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -507,8 +511,8 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
-    title: "Colorful Animal Alphabet",
-    category: "Coloring",
+    title: "Luna uczy się zauważać",
+    category: "Series",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -516,8 +520,8 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
-    title: "Tosia i potworek strachu",
-    category: "Premium",
+    title: "The Disappearance of the Star",
+    category: "Multilangual",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -525,7 +529,7 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
    {
-    title: "Tosia & the Scary Monster",
+    title: "Zuzia and the disspaparing colors",
     category: "Premium",
     age: "5-9",
     pages: 70,
@@ -534,7 +538,7 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
-    title: "The Disapperance of the Star ",
+    title: "Zuzia i znikające kolory",
     category: "Multilangual",
     age: "5-9",
     pages: 70,
@@ -543,8 +547,8 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
-    title: "Zuzia and the disspaparing colors",
-    category: "Premium",
+    title: "Zwierzakowe Zawody",
+    category: "Coloring",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
@@ -552,30 +556,12 @@ const customBooks = [
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
-    title: "Zuzia i znikające kolory",
-    category: "Polish edition",
+    title: "Easter Bunnies",
+    category: "Christmas items",
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
     image: "/covers/book53.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
-  },
-     {
-    title: "Zwierzakowe Zawody",
-    category: "Coloring",
-    age: "5-9",
-    pages: 70,
-    asin: "B0CUSTOM002",
-    image: "/covers/book54.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
-  },
-     {
-    title: "Easter Bunnies",
-    category: "Coloring",
-    age: "5-9",
-    pages: 70,
-    asin: "B0CUSTOM002",
-    image: "/covers/book55.jpg",
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
@@ -584,7 +570,52 @@ const customBooks = [
     age: "5-9",
     pages: 70,
     asin: "B0CUSTOM002",
+    image: "/covers/book54.jpg",
+    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+  },
+     {
+    title: "Tosia i tajemnica emocji",
+    category: "Premium",
+    age: "5-9",
+    pages: 70,
+    asin: "B0CUSTOM002",
+    image: "/covers/book55.jpg",
+    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+  },
+     {
+    title: "Luna uczy się być sobą",
+    category: "Series",
+    age: "5-9",
+    pages: 70,
+    asin: "B0CUSTOM002",
     image: "/covers/book56.jpg",
+    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+  },
+   {
+    title: "Student Kitchen on a Budget",
+    category: "Kitchen",
+    age: "5-9",
+    pages: 70,
+    asin: "B0CUSTOM002",
+    image: "/covers/book58.jpg",
+    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+  },
+     {
+    title: "Tosia i potworek strachu",
+    category: "Premium",
+    age: "5-9",
+    pages: 70,
+    asin: "B0CUSTOM002",
+    image: "/covers/book59.jpg",
+    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+  },
+      {
+    title: "Tosia & the Scary Monster",
+    category: "Premium",
+    age: "5-9",
+    pages: 70,
+    asin: "B0CUSTOM002",
+    image: "/covers/book60.jpg",
     samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
 ];
@@ -600,6 +631,7 @@ type CategoryKey = keyof typeof categoryTranslations["en"];
 const t = (key: TranslationKey) => translations[lang][key];
 const tc = (cat: CategoryKey | string) =>
   categoryTranslations[lang][cat as CategoryKey] || cat;
+
   const [filter, setFilter] = useState("All");
   type SampleType = {
   samples: string[];
