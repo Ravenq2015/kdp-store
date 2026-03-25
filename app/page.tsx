@@ -593,8 +593,8 @@ const allBooks = customBooks;
 
 export default function Page() {
   const [lang, setLang] = useState("en");
-const t = (key) => translations[lang][key];
-const tc = (cat) => categoryTranslations[lang][cat] || cat;
+const t = (key: any) => translations[lang][key];
+const tc = (cat: any) => categoryTranslations[lang][cat] || cat;
   const [filter, setFilter] = useState("All");
   const [activeSample, setActiveSample] = useState(null);
   const [currentSlide, setCurrentSlide] = useState(0);
