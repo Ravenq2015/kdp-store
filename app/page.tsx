@@ -15,33 +15,33 @@ const translations = {
     heroDesc:
       "From coloring and puzzles to therapeutic workbooks and mandalas — thoughtfully designed to support creativity, focus, and emotional development.",
 
-    aboutText: `We believe that every child learns best through curiosity, creativity, and play. That’s why we create books that go beyond simple entertainment — books that inspire imagination, support development, and bring real value to everyday learning.
+    aboutText: `I believe that every child learns best through curiosity, creativity, and play. That’s why we create books that go beyond simple entertainment — books that inspire imagination, support development, and bring real value to everyday learning.
 
-Our collection includes a wide variety of thoughtfully designed content, from fun coloring books and engaging activity pages to educational workbooks, calming mandalas, puzzles, and therapeutic exercises.
+My collection includes a wide variety of thoughtfully designed content, from fun coloring books and engaging activity pages to educational workbooks, calming mandalas, puzzles, and therapeutic exercises.
 
 Whether a child is exploring colors, solving challenges, relaxing with mindful patterns, or building early learning foundations, our books support every stage of growth.
 
-Our mission is simple — to create books that children love and parents trust.`,
+My mission is simple — to create books that children love and parents trust.`,
   },
 
   pl: {
     home: "Start",
     books: "Książki",
-    about: "O nas",
-    aboutTitle: "O nas",
+    about: "O mnie",
+    aboutTitle: "O mnie",
     sample: "Podgląd",
     view: "Zobacz na Amazonie",
     heroTitle: "Kreatywne książki dla rozwijających się umysłów",
     heroDesc:
       "Od kolorowanek i łamigłówek po zeszyty terapeutyczne i mandale — wspierające rozwój i kreatywność.",
 
-    aboutText: `Wierzymy, że każde dziecko uczy się najlepiej poprzez ciekawość, kreatywność i zabawę. Dlatego tworzymy książki, które wykraczają poza zwykłą rozrywkę.
+    aboutText: `Wierzę, że każde dziecko uczy się najlepiej poprzez ciekawość, kreatywność i zabawę. Dlatego tworzę książki, które wykraczają poza zwykłą rozrywkę.
 
-Nasza kolekcja obejmuje szeroki wybór treści — od kolorowanek i zadań po zeszyty edukacyjne i mandale.
+Moja kolekcja obejmuje szeroki wybór treści — od kolorowanek i zadań po zeszyty edukacyjne i mandale.
 
-Nasze książki wspierają rozwój, koncentrację i kreatywność na każdym etapie.
+Moje książki wspierają rozwój, koncentrację i kreatywność na każdym etapie.
 
-Nasza misja jest prosta — tworzyć książki, które dzieci kochają.`,
+Moja misją jest prosta — tworzyć książki, które dzieci kochają.`,
   },
 };
 
@@ -122,7 +122,7 @@ const customBooks = [
   },
     {
     title: "Dinosaur Adventure",
-    categories: "Series",
+    categories: ["Coloring", "Activity", "Series"],
     age: "3-8",
     pages: 74,
     asin: "B0G4G2W7DK",
@@ -131,7 +131,7 @@ const customBooks = [
   },
     {
     title: "Dinosaur Adventure",
-    categories: "Series",
+    categories: ["Coloring", "Activity", "Series"],
     age: "3-8",
     pages: 100,
     asin: "B0G4G7RLFP",
@@ -140,7 +140,7 @@ const customBooks = [
   },
   {
     title: "Dinosaur Adventure",
-    categories: "Series",
+    categories: ["Coloring", "Activity", "Series"],
     age: "3-8",
     pages: 101,
     asin: "B0G4N4LY6L",
@@ -149,7 +149,7 @@ const customBooks = [
   },
   {
     title: "Dinosaur Adventure",
-    categories: "Series",
+    categories: ["Coloring", "Activity", "Series"],
     age: "3-8",
     pages: 100,
     asin: "B0G4PCCK9W",
@@ -158,7 +158,7 @@ const customBooks = [
   },
   {
     title: "Dinosaur Adventure",
-    categories: "Series",
+    categories: ["Coloring", "Activity", "Series"],
     age: "3-8",
     pages: 100,
     asin: "B0G48VYMZD",
@@ -167,7 +167,7 @@ const customBooks = [
   },
     {
     title: "Dinosaur Adventure",
-    categories: "Series",
+    categories: ["Coloring", "Activity", "Series"],
     age: "3-8",
     pages: 100,
     asin: "B0G44RD9FJ",
@@ -176,7 +176,7 @@ const customBooks = [
   },
     {
     title: "Dinosaur Adventure",
-    categories: "Series",
+    categories: ["Coloring", "Activity", "Series"],
     age: "3-8",
     pages: 100,
     asin: "B0G4D1XRXL",
@@ -185,7 +185,7 @@ const customBooks = [
   },
     {
     title: "Dinosaur Adventure",
-    categories: "Series",
+    categories: ["Coloring", "Activity", "Series"],
     age: "3-8",
     pages: 100,
     asin: "B0G492HYJD",
@@ -194,7 +194,7 @@ const customBooks = [
   },
     {
     title: "Dinosaur Adventure",
-    categories: "Series",
+    categories: ["Coloring", "Activity", "Series"],
     age: "3-8",
     pages: 100,
     asin: "B0G4CDLG15",
@@ -203,7 +203,7 @@ const customBooks = [
   },
     {
     title: "Dinosaur Adventure",
-    categories: "Series",
+    categories: ["Coloring", "Activity", "Series"],
     age: "3-8",
     pages: 100,
     asin: "B0G4G9XW5X",
@@ -212,7 +212,7 @@ const customBooks = [
   },
     {
     title: "Dinosaur Adventure",
-    categories: "Series",
+    categories: ["Coloring", "Activity", "Series"],
     age: "3-8",
     pages: 100,
     asin: "B0G4GDW5YQ",
@@ -221,7 +221,7 @@ const customBooks = [
   },
     {
     title: "Dinosaur Adventure",
-    categories: "Series",
+    categories: ["Coloring", "Activity", "Series"],
     age: "3-8",
     pages: 101,
     asin: "B0G4LVXCC7",
@@ -266,7 +266,7 @@ const customBooks = [
   },
      {
     title: "Dziennik Mikro-Radości",
-    categories: "Journal",
+    categories: ["Journal", "Polish edition"],
     age: "14-18",
     pages: 78,
     asin: "B0FSY1GTGB",
