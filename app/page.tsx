@@ -111,7 +111,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G6YL9T8Q",
     image: "/covers/book57.jpg",
-    samples: ["/samples/book3/1.jpg","/samples/book2/2.jpg","/samples/book2/3.jpg","/samples/book2/4.jpg"],
+    samples: ["/samples/book4/1.jpg","/samples/book2/2.jpg","/samples/book2/3.jpg","/samples/book2/4.jpg"],
   },
     {
     title: "Dinosaur Adventure",
@@ -120,7 +120,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G4G2W7DK",
     image: "/covers/book_1.jpg",
-    samples: ["/samples/book1/1.jpg","/samples/book1/2.jpg","/samples/book1/3.jpg","/samples/book1/4.jpg"],
+    samples: ["/samples/book5/1.jpg","/samples/book1/2.jpg","/samples/book1/3.jpg","/samples/book1/4.jpg"],
   },
     {
     title: "Dinosaur Adventure",
@@ -129,7 +129,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G4G7RLFP",
     image: "/covers/book_2.jpg",
-    samples: ["/samples/book5/1.jpg","/samples/book3/2.jpg","/samples/book3/3.jpg","/samples/book3/4.jpg"],
+    samples: ["/samples/book6/1.jpg","/samples/book3/2.jpg","/samples/book3/3.jpg","/samples/book3/4.jpg"],
   },
   {
     title: "Dinosaur Adventure",
@@ -138,7 +138,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G4N4LY6L",
     image: "/covers/book_3.jpg",
-    samples: ["/samples/book6/1.jpg","/samples/book3/2.jpg","/samples/book3/3.jpg","/samples/book3/4.jpg"],
+    samples: ["/samples/book7/1.jpg","/samples/book3/2.jpg","/samples/book3/3.jpg","/samples/book3/4.jpg"],
   },
   {
     title: "Dinosaur Adventure",
@@ -147,7 +147,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G4PCCK9W",
     image: "/covers/book_4.jpg",
-    samples: ["/samples/book7/1.jpg","/samples/book4/2.jpg","/samples/book4/3.jpg","/samples/book4/4.jpg"],
+    samples: ["/samples/book8/1.jpg","/samples/book4/2.jpg","/samples/book4/3.jpg","/samples/book4/4.jpg"],
   },
   {
     title: "Dinosaur Adventure",
@@ -156,7 +156,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G48VYMZD",
     image: "/covers/book_5.jpg",
-    samples: ["/samples/book8/1.jpg","/samples/book5/2.jpg","/samples/book5/3.jpg","/samples/book5/4.jpg"],
+    samples: ["/samples/book9/1.jpg","/samples/book5/2.jpg","/samples/book5/3.jpg","/samples/book5/4.jpg"],
   },
     {
     title: "Dinosaur Adventure",
@@ -165,7 +165,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G44RD9FJ",
     image: "/covers/book_6.jpg",
-    samples: ["/samples/book9/1.jpg","/samples/book6/2.jpg","/samples/book5/3.jpg","/samples/book5/4.jpg"],
+    samples: ["/samples/book10/1.jpg","/samples/book6/2.jpg","/samples/book5/3.jpg","/samples/book5/4.jpg"],
   },
     {
     title: "Dinosaur Adventure",
@@ -174,7 +174,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G4D1XRXL",
     image: "/covers/book_7.jpg",
-    samples: ["/samples/book10/1.jpg","/samples/book7/2.jpg","/samples/book5/3.jpg","/samples/book5/4.jpg"],
+    samples: ["/samples/book11/1.jpg","/samples/book7/2.jpg","/samples/book5/3.jpg","/samples/book5/4.jpg"],
   },
     {
     title: "Dinosaur Adventure",
@@ -183,7 +183,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G492HYJD",
     image: "/covers/book_8.jpg",
-    samples: ["/samples/book11/1.jpg","/samples/book8/2.jpg","/samples/book5/3.jpg","/samples/book5/4.jpg"],
+    samples: ["/samples/book12/1.jpg","/samples/book8/2.jpg","/samples/book5/3.jpg","/samples/book5/4.jpg"],
   },
     {
     title: "Dinosaur Adventure",
@@ -192,7 +192,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G4CDLG15",
     image: "/covers/book_9.jpg",
-    samples: ["/samples/book12/1.jpg","/samples/book9/2.jpg","/samples/book5/3.jpg","/samples/book5/4.jpg"],
+    samples: ["/samples/book13/1.jpg","/samples/book9/2.jpg","/samples/book5/3.jpg","/samples/book5/4.jpg"],
   },
     {
     title: "Dinosaur Adventure",
@@ -201,7 +201,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G4G9XW5X",
     image: "/covers/book_10.jpg",
-    samples: ["/samples/book13/1.jpg","/samples/book10/2.jpg","/samples/book5/3.jpg","/samples/book5/4.jpg"],
+    samples: ["/samples/book14/1.jpg","/samples/book10/2.jpg","/samples/book5/3.jpg","/samples/book5/4.jpg"],
   },
     {
     title: "Dinosaur Adventure",
@@ -210,7 +210,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G4GDW5YQ",
     image: "/covers/book_11.jpg",
-    samples: ["/samples/book14/1.jpg","/samples/book11/2.jpg","/samples/book5/3.jpg","/samples/book5/4.jpg"],
+    samples: ["/samples/book15/1.jpg","/samples/book11/2.jpg","/samples/book5/3.jpg","/samples/book5/4.jpg"],
   },
     {
     title: "Dinosaur Adventure",
@@ -219,7 +219,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G4LVXCC7",
     image: "/covers/book_12.jpg",
-    samples: ["/samples/book15/1.jpg","/samples/book12/2.jpg","/samples/book5/3.jpg","/samples/book5/4.jpg"],
+    samples: ["/samples/book16/1.jpg","/samples/book12/2.jpg","/samples/book5/3.jpg","/samples/book5/4.jpg"],
   },
   {
     title: "Colorful Animal Alphabet",
@@ -228,7 +228,7 @@ const customBooks = [
     pages: 70,
     asin: "B0FLWFQ4C7",
     image: "/covers/book15.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book17/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
    {
     title: "Calm & Quiet Activity Book for Kids",
@@ -237,7 +237,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GF7HG2CX",
     image: "/covers/book17.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book18/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Coloring Book For Kids",
@@ -246,7 +246,7 @@ const customBooks = [
     pages: 70,
     asin: "B0FWZTXB7B",
     image: "/covers/book18.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book19/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Micro-Joy Journal",
@@ -255,7 +255,7 @@ const customBooks = [
     pages: 70,
     asin: "B0FWKMQ4KS",
     image: "/covers/book19.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book20/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Dziennik Mikro-Radości",
@@ -264,7 +264,7 @@ const customBooks = [
     pages: 70,
     asin: "B0FSY1GTGB",
     image: "/covers/book20.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book21/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Find The Difference!",
@@ -273,7 +273,7 @@ const customBooks = [
     pages: 70,
     asin: "B0FWZPZWY1",
     image: "/covers/book21.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book22/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Easter Chicks",
@@ -282,7 +282,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GN33JTKT",
     image: "/covers/book22.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book23/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Food Drink & Sweets",
@@ -291,7 +291,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G2RTHJZT",
     image: "/covers/book23.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book24/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Girl & Bunny",
@@ -300,7 +300,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GMF8HP95",
     image: "/covers/book24.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book25/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Kolorowanka dla dzieci",
@@ -309,7 +309,7 @@ const customBooks = [
     pages: 70,
     asin: "B0FWZM9XZG",
     image: "/covers/book25.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book26/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Lena i dom ukrytych myśli",
@@ -318,7 +318,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GLDV8M6M",
     image: "/covers/book26.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book27/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Podwodna przygoda Bąbelka",
@@ -327,7 +327,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G3GKGQDG",
     image: "/covers/book27.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book28/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Dynia która bała się ciemności",
@@ -336,7 +336,7 @@ const customBooks = [
     pages: 70,
     asin: "B0FPWX75Z9",
     image: "/covers/book28.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book29/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Pumpkin who was afraid of dark",
@@ -345,7 +345,7 @@ const customBooks = [
     pages: 70,
     asin: "B0FPX3LTT7",
     image: "/covers/book29.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book30/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "The Quiet Hero",
@@ -354,7 +354,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GB786Z6D",
     image: "/covers/book30.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book31/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Sara i zaginiona melodia lasu",
@@ -363,7 +363,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GD69V61B",
     image: "/covers/book31.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book32/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Studencka kuchnia za grosze",
@@ -372,7 +372,7 @@ const customBooks = [
     pages: 70,
     asin: "B0FQ51L7S2",
     image: "/covers/book32.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book33/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "When the River Stopped Moving",
@@ -381,7 +381,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GCDR8KFX",
     image: "/covers/book33.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book34/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "The Day Colors Began to Fade",
@@ -390,7 +390,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GCNPDGS1",
     image: "/covers/book34.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book35/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "The Night the Moon Needed Help",
@@ -399,7 +399,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GCBPD4PL",
     image: "/covers/book35.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book36/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "The Town That Forgot How to Play",
@@ -408,7 +408,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GCN8XQ3M",
     image: "/covers/book36.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book37/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
   
    {
@@ -418,7 +418,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GBTDHD9X",
     image: "/covers/book37.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book38/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "The Small Explorer and the Hidden Door",
@@ -427,7 +427,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GC5GZRVY",
     image: "/covers/book38.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book39/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Mandala Planner 2026",
@@ -436,7 +436,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G62XYY2X",
     image: "/covers/book39.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book40/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
    {
     title: "Luna uczy się uspokajać",
@@ -445,7 +445,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GHPT5YJP",
     image: "/covers/book40.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book41/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Luna uczy się cierpliwośći",
@@ -454,7 +454,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GHQ98HMB",
     image: "/covers/book41.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book42/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Luna uczy się słuchać",
@@ -463,7 +463,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GHPXXSTT",
     image: "/covers/book42.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book43/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Luna uczy się stawiać czoła strachowi",
@@ -472,7 +472,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GQPRNLW8",
     image: "/covers/book43.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book44/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Luna uczy się o wielkich uczuciach",
@@ -481,7 +481,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GQPPDZWV",
     image: "/covers/book44.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book45/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Luna uczy się życzliwości",
@@ -490,7 +490,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GQQ8FN56",
     image: "/covers/book45.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book46/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Luna uczy się mówić nie",
@@ -499,7 +499,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GQPVY4WS",
     image: "/covers/book46.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book47/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Luna uczy się próbować",
@@ -508,7 +508,7 @@ const customBooks = [
     pages: 70,
     asin: "",
     image: "/covers/book47.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book48/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Luna uczy się zauważać",
@@ -517,7 +517,7 @@ const customBooks = [
     pages: 70,
     asin: "",
     image: "/covers/book48.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book49/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "The Disappearance of the Star",
@@ -526,7 +526,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G3X25TCJ",
     image: "/covers/book49.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book50/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
    {
     title: "Zuzia and the disspaparing colors",
@@ -535,7 +535,7 @@ const customBooks = [
     pages: 70,
     asin: "B0FWJF44LN",
     image: "/covers/book50.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book51/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Zuzia i znikające kolory",
@@ -544,7 +544,7 @@ const customBooks = [
     pages: 70,
     asin: "B0FWJXKLD3",
     image: "/covers/book51.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book52/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Zwierzakowe Zawody",
@@ -553,7 +553,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G32KYKYS",
     image: "/covers/book52.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book53/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Easter Bunnies",
@@ -562,7 +562,7 @@ const customBooks = [
     pages: 70,
     asin: "B0GMPD4XVZ",
     image: "/covers/book53.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book54/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Coloring Book for Kids",
@@ -571,7 +571,7 @@ const customBooks = [
     pages: 70,
     asin: "B0FWZR8J1H",
     image: "/covers/book54.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book55/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Tosia i tajemnica emocji",
@@ -580,7 +580,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G1RXBF5H",
     image: "/covers/book55.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book56/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Luna uczy się być sobą",
@@ -589,7 +589,7 @@ const customBooks = [
     pages: 70,
     asin: "",
     image: "/covers/book56.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book57/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
    {
     title: "Student Kitchen on a Budget",
@@ -598,7 +598,7 @@ const customBooks = [
     pages: 70,
     asin: "B0FQB6PJKL",
     image: "/covers/book58.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book58/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
      {
     title: "Tosia i potworek strachu",
@@ -607,7 +607,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G2RQ22VS",
     image: "/covers/book59.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book59/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
       {
     title: "Tosia & the Scary Monster",
@@ -616,7 +616,7 @@ const customBooks = [
     pages: 70,
     asin: "B0G6Y9SQK1",
     image: "/covers/book60.jpg",
-    samples: ["/samples/book16/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
+    samples: ["/samples/book60/1.jpg","/samples/book6/2.jpg","/samples/book6/3.jpg","/samples/book6/4.jpg"],
   },
 ];
 
