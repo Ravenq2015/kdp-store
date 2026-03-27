@@ -671,12 +671,29 @@ const [activeSample, setActiveSample] = useState<SampleType | null>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [offsetY, setOffsetY] = useState(0);
   const [showTop, setShowTop] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+const [activeSection, setActiveSection] = useState("top");
   const [isHovered, setIsHovered] = useState(false);
 
  useEffect(() => {
   const handleScroll = () => {
-    setOffsetY(window.scrollY);
-    setShowTop(window.scrollY > 400);
+    const scrollY = window.scrollY;
+
+    setOffsetY(scrollY);
+    setShowTop(scrollY > 400);
+    setScrolled(scrollY > 20);
+
+    const sections = ["top", "books", "about"];
+
+    for (let sec of sections) {
+      const el = document.getElementById(sec);
+      if (!el) continue;
+
+      const rect = el.getBoundingClientRect();
+      if (rect.top <= 120 && rect.bottom >= 120) {
+        setActiveSection(sec);
+      }
+    }
   };
 
   window.addEventListener("scroll", handleScroll);
@@ -702,41 +719,62 @@ const [activeSample, setActiveSample] = useState<SampleType | null>(null);
   const filteredBooks =
   filter === "All"
     ? allBooks
-    : allBooks.filter(
-        (book) =>
-          book.categories?.includes(filter) ||
-          book.category === filter
-      );
+    : allBooks.filter((book) => {
+        if (Array.isArray(book.categories)) {
+          return book.categories.includes(filter);
+        }
+        return book.categories === filter;
+      });
   return (
-    <div className="relative min-h-screen font-sans text-white overflow-x-hidden">
+    <div className="relative min-h-screen font-sans text-white overflow-x-hidden bg-black">
 
       {/* 🔥 ANIMOWANY NAV */}
-      <div className="relative flex justify-between items-center px-12 py-6 sticky top-0 z-50 overflow-hidden bg-white/80 backdrop-blur">
+      <div className="fixed top-0 left-0 w-full flex justify-between items-center px-12 py-5 z-50 bg-white/70 backdrop-blur-xl border-b border-white/20 shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
 
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-300 via-pink-300 to-yellow-200 animate-gradient"></div>
+         <div className="absolute inset-0 pointer-events-none overflow-hidden">
+           </div>
 
-        <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <span className="absolute left-10 top-2 text-2xl animate-float1">⭐</span>
-          <span className="absolute left-1/3 top-4 text-xl animate-float2">🦋</span>
-          <span className="absolute right-1/3 top-1 text-xl animate-float2">✨</span>
-        </div>
+        <div className="flex gap-10 text-lg items-center mx-auto">
 
-        <div className="relative z-10 flex justify-between items-center w-full">
-
-          <div className="flex items-center gap-3">
-            <img src="/logo.png" className="h-20" />
-            <span className="text-3xl font-bold tracking-tight text-orange-600">
-              Books
-            </span>
+          <div className="flex items-center gap-3 absolute left-6">
+            <img src="/logo.png" className="h-16 drop-shadow-md" />
+            <span className="text-2xl font-semibold tracking-tight text-gray-800">
+              Raven Books
+              </span>
           </div>
 
-          <div className="flex gap-10 text-lg items-center">
-            <button
-               onClick={() => setLang(lang === "en" ? "pl" : "en")}
-                 className="bg-black text-white px-3 py-1 rounded-full text-sm hover:bg-orange-500"
-                    >
-                      {lang === "en" ? "PL" : "EN"}
-              </button>
+          <div className="flex gap-10 text-lg items-center w-full">
+            
+           <div className="absolute right-4 top-2 flex gap-2">
+  
+  
+<div className="flex items-center gap-1 bg-white/70 backdrop-blur px-1 py-1 rounded-full shadow-sm ml-auto">
+
+  <button
+    onClick={() => setLang("en")}
+    className={`px-2 py-[2px] rounded-full text-sm transition ${
+      lang === "en"
+  ? "bg-orange-500 text-white shadow-md scale-105"
+        : "text-gray-600 hover:text-black"
+    }`}
+  >
+    EN
+  </button>
+
+  <button
+    onClick={() => setLang("pl")}
+    className={`px-2 py-[2px] rounded-full text-sm transition ${
+      lang === "pl"
+  ? "bg-orange-500 text-white shadow-md scale-105"
+        : "text-gray-600 hover:text-black"
+    }`}
+  >
+    PL
+  </button>
+
+</div>
+</div>
+
             <a href="#top" className="flex items-center gap-2 text-black hover:text-orange-600 transition">
               🏠 <span>{t("home")}</span>
             </a>
@@ -751,27 +789,22 @@ const [activeSample, setActiveSample] = useState<SampleType | null>(null);
         </div>
       </div>
 
-      {/* PARALLAX TŁO */}
-      <div
-        className="absolute inset-0 will-change-transform"
-        style={{
-          transform: `translateY(${offsetY * 0.3}px) scale(1.1)`
-        }}
-      >
-        <div className="w-full h-full bg-[url('/bg.jpg')] bg-cover bg-center bg-no-repeat blur-[2px] scale-125 brightness-75"></div>
+      {/* TŁO */}
+        <div className="absolute inset-0">
+        <div className="w-full h-full bg-[url('/bg.jpg')] bg-cover bg-center bg-no-repeat opacity-50"></div>
       </div>
 
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/40 via-black/20 to-black/50 backdrop-blur-[2px]"></div>
 
-      <div className="relative z-10">
+      <div className="relative z-10 pt-24">
 
         {/* HERO */}
         <div id="top" className="max-w-6xl mx-auto px-6 py-32 text-center">
-          <h2 className="text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+          <h2 className="text-6xl font-bold mb-6 text-white drop-shadow-[0_8px_30px_rgba(0,0,0,0.8)]">
             {t("heroTitle")}
           </h2>
 
-          <p className="text-gray-200 max-w-xl mx-auto text-lg mb-12">
+          <p className="text-gray-300 max-w-xl mx-auto text-lg mb-12 leading-relaxed">
             {t("heroDesc")}
           </p>
 
@@ -804,12 +837,20 @@ const [activeSample, setActiveSample] = useState<SampleType | null>(null);
                   px-5 py-2 rounded-full text-sm font-medium transition-all duration-300
                   ${
                     filter === cat
-                      ? "bg-orange-500 text-white shadow-lg scale-105"
-                      : "bg-white text-gray-600 border border-gray-200 hover:bg-black hover:text-white"
+                   ? "bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-xl scale-110 ring-2 ring-white/30"
+                      : "bg-white/90 text-gray-700 backdrop-blur shadow-md border border-gray-200 hover:bg-black hover:text-white"
                   }
                 `}
               >
-                {tc(cat)}
+              {tc(cat)} (
+               {cat === "All"
+                ? allBooks.length
+                : allBooks.filter((b) =>
+                Array.isArray(b.categories)
+             ? b.categories.includes(cat)
+             : b.categories === cat
+                ).length}
+                )
               </button>
             ))}
           </div>
@@ -817,19 +858,19 @@ const [activeSample, setActiveSample] = useState<SampleType | null>(null);
 
         {/* GRID */}
         <div id="books" className="max-w-6xl mx-auto px-6 mb-24 scroll-mt-32">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-10 auto-rows-max">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-10 auto-rows-max transition-all duration-500">
 
             {filteredBooks.map((book, i) => (
               <div key={i} className="group perspective">
                 <div className="relative transition duration-500 transform-style group-hover:rotate-y-12">
                   <div className="absolute inset-0 bg-black/20 blur-xl translate-y-6 rounded-xl"></div>
 
-                  <div className="relative bg-white p-3 rounded-xl shadow-xl">
+                  <div className="relative bg-white/90 backdrop-blur-md p-3 rounded-xl shadow-2xl border border-white/40">
                     <img src={book.image} className="h-[200px] object-contain" />
                   </div>
 
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center bg-black/80 rounded-xl text-center px-2">
-                    <p className="text-white text-xs">
+                    <p className="text-white text-[10px]">
                         Ages: {book.age}
                     </p>
                         <p className="text-white text-xs mb-2 opacity-80">
@@ -840,7 +881,7 @@ const [activeSample, setActiveSample] = useState<SampleType | null>(null);
                         setActiveSample(book);
                         setCurrentSlide(0);
                       }}
-                      className="bg-white text-black px-2 py-1 text-xs rounded-full mb-2 hover:bg-orange-500 hover:text-white whitespace-nowrap"
+                      className="bg-white text-black px-2 py-1 text-xs rounded-full mb-2 hover:bg-orange-500 hover:text-white whitespace-nowrap -mt-4"
                     >
                       {t("sample")}
                     </button>
