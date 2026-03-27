@@ -659,8 +659,10 @@ type TranslationKey = keyof typeof translations["en"];
 type CategoryKey = keyof typeof categoryTranslations["en"];
 
 const t = (key: TranslationKey) => translations[lang][key];
-const tc = (cat: string) =>
-  categoryTranslations[lang][cat as keyof typeof categoryTranslations["en"]] || cat;
+const tc = (cat: string) => {
+  const map = categoryTranslations[lang] as Record<string, string>;
+  return map[cat] || cat;
+};
 
   const [filter, setFilter] = useState("All");
   type SampleType = {
