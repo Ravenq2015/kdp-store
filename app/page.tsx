@@ -917,66 +917,137 @@ const [activeSection, setActiveSection] = useState("top");
           © 2026 J RAVEN B
         </div>
 
-        {/* SLIDER */}
-        {activeSample && (
-          <div className="fixed inset-0 bg-black/90 z-9999] flex flex-col items-center justify-center">
+       {/* SLIDER */}
 
-            <button
-                onClick={() => setActiveSample(null)}
-               className="absolute top-6 right-6 z-50 bg-black/60 px-3 py-1 rounded-full text-white text-2xl hover:text-orange-500"
-            >
-              ✕
-            </button>
+{/* SLIDER */}
+{activeSample && (
+  <div
+    className="fixed inset-0 bg-black/90 z-[99999] flex items-center justify-center"
+    onClick={() => setActiveSample(null)}
+  >
+    {/* ❌ KRZYŻYK */}
+    <button
+      onClick={() => setActiveSample(null)}
+      className="fixed top-20 right-6 z-[100000] bg-black/70 px-3 py-1 rounded-full text-white text-2xl hover:text-orange-500"
+    >
+      ✕
+    </button>
 
-            <div
-              className="max-w-2xl w-full px-6 relative"
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
-            >
-              <img
-                src={activeSample?.samples?.[currentSlide]}
-                className="w-full rounded-xl shadow-2xl transition duration-500"
-              />
+    {/* 📷 SLIDER */}
+    <div
+      className="max-w-2xl w-full px-6 relative z-10"
+      onClick={(e) => e.stopPropagation()}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <img
+        src={activeSample?.samples?.[currentSlide]}
+        className="w-full rounded-xl shadow-2xl transition duration-500"
+      />
 
-              <button
-                onClick={() =>
-                  setCurrentSlide((prev) =>
-                    prev === 0 ? activeSample.samples.length - 1 : prev - 1
-                  )
-                }
-                className="absolute left-2 top-1/2 -translate-y-1/2 text-orange-500 text-3xl hover:text-orange-600"
-              >
-                ←
-              </button>
+      <button
+        onClick={() =>
+          setCurrentSlide((prev) =>
+            prev === 0 ? activeSample.samples.length - 1 : prev - 1
+          )
+        }
+        className="absolute left-2 top-1/2 -translate-y-1/2 text-orange-500 text-3xl"
+      >
+        ←
+      </button>
 
-              <button
-                onClick={() =>
-                  setCurrentSlide((prev) =>
-                    prev === activeSample.samples.length - 1 ? 0 : prev + 1
-                  )
-                }
-                className="absolute right-2 top-1/2 -translate-y-1/2 text-orange-500 text-3xl hover:text-orange-600"
-              >
-                →
-              </button>
+      <button
+        onClick={() =>
+          setCurrentSlide((prev) =>
+            prev === activeSample.samples.length - 1 ? 0 : prev + 1
+          )
+        }
+        className="absolute right-2 top-1/2 -translate-y-1/2 text-orange-500 text-3xl"
+      >
+        →
+      </button>
 
-              <div className="flex justify-center mt-4 gap-2">
-                {activeSample.samples.map((_, i) => (
-                  <div
-                    key={i}
-                    onClick={() => setCurrentSlide(i)}
-                    className={`h-2 w-2 rounded-full cursor-pointer transition ${
-                      i === currentSlide
-                        ? "bg-orange-500 scale-125"
-                        : "bg-white/50"
-                    }`}
-                  />
-                ))}
-              </div>
+      <div className="flex justify-center mt-4 gap-2">
+        {activeSample.samples.map((_, i) => (
+          <div
+            key={i}
+            onClick={() => setCurrentSlide(i)}
+            className={`h-2 w-2 rounded-full cursor-pointer ${
+              i === currentSlide
+                ? "bg-orange-500 scale-125"
+                : "bg-white/50"
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+)}
 
-            </div>
-          </div>
-        )}
+    {/* SLIDER */}
+{activeSample && (
+  <div
+    className="fixed inset-0 bg-black/90 z-[99999] flex items-center justify-center"
+    onClick={() => setActiveSample(null)}
+  >
+    {/* ❌ KRZYŻYK */}
+    <button
+      onClick={() => setActiveSample(null)}
+      className="fixed top-20 right-6 z-[100000] bg-black/70 px-3 py-1 rounded-full text-white text-2xl hover:text-orange-500"
+    >
+      ✕
+    </button>
+
+    {/* 📷 SLIDER */}
+    <div
+      className="max-w-2xl w-full px-6 relative z-10"
+      onClick={(e) => e.stopPropagation()}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <img
+        src={activeSample?.samples?.[currentSlide]}
+        className="w-full rounded-xl shadow-2xl transition duration-500"
+      />
+
+      <button
+        onClick={() =>
+          setCurrentSlide((prev) =>
+            prev === 0 ? activeSample.samples.length - 1 : prev - 1
+          )
+        }
+        className="absolute left-2 top-1/2 -translate-y-1/2 text-orange-500 text-3xl"
+      >
+        ←
+      </button>
+
+      <button
+        onClick={() =>
+          setCurrentSlide((prev) =>
+            prev === activeSample.samples.length - 1 ? 0 : prev + 1
+          )
+        }
+        className="absolute right-2 top-1/2 -translate-y-1/2 text-orange-500 text-3xl"
+      >
+        →
+      </button>
+
+      <div className="flex justify-center mt-4 gap-2">
+        {activeSample.samples.map((_, i) => (
+          <div
+            key={i}
+            onClick={() => setCurrentSlide(i)}
+            className={`h-2 w-2 rounded-full cursor-pointer ${
+              i === currentSlide
+                ? "bg-orange-500 scale-125"
+                : "bg-white/50"
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+)}
 
         <style jsx>{`
           .perspective { perspective: 1000px; }
@@ -1019,20 +1090,21 @@ const [activeSection, setActiveSection] = useState("top");
 
         `}</style>
 
-      </div>
-{showTop && (
-  <button
-    onClick={() => {
-      document.getElementById("books")?.scrollIntoView({
-        behavior: "smooth",
-      });
-    }}
-    style={{ position: "fixed", bottom: 20, right: 20, zIndex: 9999 }}
-    className="bg-orange-500 text-white px-4 py-3 rounded-full shadow-lg"
-  >
-    ↑
-  </button>
-)}
+       </div>
+
+      {showTop && (
+        <button
+          onClick={() => {
+            document.getElementById("books")?.scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
+          style={{ position: "fixed", bottom: 20, right: 20, zIndex: 9999 }}
+          className="bg-orange-500 text-white px-4 py-3 rounded-full shadow-lg"
+        >
+          ↑
+        </button>
+      )}
     </div>
   );
 }
