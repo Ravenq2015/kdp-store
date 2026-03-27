@@ -872,7 +872,7 @@ const [activeSection, setActiveSection] = useState("top");
                   </div>
 
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center bg-black/80 rounded-xl text-center px-2">
-                    <p className="text-white text-[10px]">
+                    <p className="text-white text-xs">
                         Ages: {book.age}
                     </p>
                         <p className="text-white text-xs mb-2 opacity-80">
@@ -883,7 +883,7 @@ const [activeSection, setActiveSection] = useState("top");
                         setActiveSample(book);
                         setCurrentSlide(0);
                       }}
-                      className="bg-white text-black px-2 py-1 text-xs rounded-full mb-2 hover:bg-orange-500 hover:text-white whitespace-nowrap -mt-4"
+                      className="bg-white text-black px-2 py-1 text-xs rounded-full hover:bg-orange-500 hover:text-white whitespace-nowrap"
                     >
                       {t("sample")}
                     </button>
