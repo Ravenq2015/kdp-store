@@ -919,11 +919,11 @@ const [activeSection, setActiveSection] = useState("top");
 
         {/* SLIDER */}
         {activeSample && (
-          <div className="fixed inset-0 bg-black/90 z-50 flex flex-col items-center justify-center">
+          <div className="fixed inset-0 bg-black/90 z-9999] flex flex-col items-center justify-center">
 
             <button
-              onClick={() => setActiveSample(null)}
-              className="absolute top-6 right-6 text-white text-2xl hover:text-orange-500"
+                onClick={() => setActiveSample(null)}
+               className="absolute top-6 right-6 z-50 bg-black/60 px-3 py-1 rounded-full text-white text-2xl hover:text-orange-500"
             >
               ✕
             </button>
