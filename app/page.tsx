@@ -338,7 +338,7 @@ const customBooks = [
   },
      {
     title: "Dynia która bała się ciemności",
-    categories: "Polish edition",
+    categories: ["Premium", "Polish edition"],
     age: "3-8",
     pages: 95,
     asin: "B0FPWX75Z9",
