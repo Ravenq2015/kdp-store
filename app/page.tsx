@@ -731,7 +731,7 @@ const [activeSection, setActiveSection] = useState("top");
     <div className="relative min-h-screen font-sans text-white overflow-x-hidden bg-black">
 
       {/* 🔥 ANIMOWANY NAV */}
-      <div className="fixed top-0 left-0 w-full flex justify-between items-center px-12 py-5 z-50 bg-white/70 backdrop-blur-xl border-b border-white/20 shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+      <div className="fixed top-0 left-0 w-full flex items-center min-h-[70px] md:min-h-[90px] px-4 md:px-12 z-50 bg-white/70 backdrop-blur-xl border-b border-white/20 shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
 
          <div className="absolute inset-0 pointer-events-none overflow-hidden">
            </div>
