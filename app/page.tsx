@@ -731,23 +731,23 @@ const [activeSection, setActiveSection] = useState("top");
     <div className="relative min-h-screen font-sans text-white overflow-x-hidden bg-black">
 
       {/* 🔥 ANIMOWANY NAV */}
-      <div className="fixed top-0 left-0 w-full flex justify-between items-center px-4 md:px-12 py-3 md:py-5 z-50 bg-white/70 backdrop-blur-xl border-b border-white/20 shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+      <div className="fixed top-0 left-0 w-full flex justify-between items-center px-12 py-5 z-50 bg-white/70 backdrop-blur-xl border-b border-white/20 shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
 
          <div className="absolute inset-0 pointer-events-none overflow-hidden">
            </div>
 
         <div className="flex gap-10 text-lg items-center mx-auto">
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3 absolute left-6">
             <img src="/logo.png" className="h-16 drop-shadow-md" />
             <span className="text-2xl font-semibold tracking-tight text-gray-800">
               Raven Books
               </span>
           </div>
 
-          <div className="hidden md:flex gap-10 text-lg items-center mx-auto">
+          <div className="flex gap-10 text-lg items-center w-full">
             
-           <div className="absolute right-4 top-3 md:top-4 flex gap-2">
+           <div className="absolute right-4 top-2 flex gap-2">
   
   
 <div className="flex items-center gap-1 bg-white/70 backdrop-blur px-1 py-1 rounded-full shadow-sm ml-auto">
@@ -777,13 +777,13 @@ const [activeSection, setActiveSection] = useState("top");
 </div>
 </div>
 
-            <a href="#top" className="flex items-center gap-2 text-black hover:text-orange-600 transition">
+            <a href="#top" className="hidden md:flex items-center gap-2 text-black hover:text-orange-600 transition">
               🏠 <span>{t("home")}</span>
             </a>
-            <a href="#books" className="flex items-center gap-2 text-black hover:text-orange-600 transition">
+            <a href="#top" className="hidden md:flex items-center gap-2 text-black hover:text-orange-600 transition">
               📚 <span>{t("books")}</span>
             </a>
-            <a href="#about" className="flex items-center gap-2 text-black hover:text-orange-600 transition">
+            <a href="#top" className="hidden md:flex items-center gap-2 text-black hover:text-orange-600 transition">
               ⭐ <span>{t("about")}</span>
             </a>
           </div>
@@ -917,9 +917,11 @@ const [activeSection, setActiveSection] = useState("top");
           © 2026 J RAVEN B
         </div>
 
-     {/* SLIDER */}
-     {activeSample && (
-     <div
+       {/* SLIDER */}
+
+{/* SLIDER */}
+{activeSample && (
+  <div
     className="fixed inset-0 bg-black/90 z-[99999] flex items-center justify-center"
     onClick={() => setActiveSample(null)}
   >
@@ -1106,3 +1108,5 @@ const [activeSection, setActiveSection] = useState("top");
     </div>
   );
 }
+
+
