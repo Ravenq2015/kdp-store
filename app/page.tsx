@@ -1094,10 +1094,18 @@ const [activeSection, setActiveSection] = useState("top");
 
       {showTop && (
         <button
-          onClick={() => {
-            document.getElementById("books")?.scrollIntoView({
-              behavior: "smooth",
-            });
+         onClick={() => {
+  const el = document.getElementById("books");
+  const yOffset = -400; // wysokość navbara
+
+  if (el) {
+    const y =
+      el.getBoundingClientRect().top +
+      window.pageYOffset +
+      yOffset;
+
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }
           }}
           style={{ position: "fixed", bottom: 20, right: 20, zIndex: 9999 }}
           className="bg-orange-500 text-white px-4 py-3 rounded-full shadow-lg"
