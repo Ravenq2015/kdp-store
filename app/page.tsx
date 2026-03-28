@@ -745,9 +745,9 @@ const [activeSection, setActiveSection] = useState("top");
               </span>
           </div>
 
-          <div className="hidden md:flex gap-10 text-lg items-center mx-auto">
+          <div className="flex gap-10 text-lg items-center w-full">
             
-           <div className="flex items-center gap-2 ml-auto">
+           <div className="absolute right-4 top-3 md:top-4 flex gap-2">
   
   
 <div className="flex items-center gap-1 bg-white/70 backdrop-blur px-1 py-1 rounded-full shadow-sm ml-auto">
