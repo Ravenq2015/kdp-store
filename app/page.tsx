@@ -801,7 +801,7 @@ const [activeSection, setActiveSection] = useState("top");
       <div className="relative z-10 pt-24">
 
         {/* HERO */}
-        <div id="top" className="max-w-6xl mx-auto px-6 py-32 text-center">
+        <div id="top" className="max-w-6xl mx-auto px-6 pt-20 pb-16 md:pt-28 md:pb-20 text-center">
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white drop-shadow-[0_8px_30px_rgba(0,0,0,0.8)]">
             {t("heroTitle")}
           </h2>
