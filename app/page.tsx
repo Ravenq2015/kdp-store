@@ -1116,7 +1116,7 @@ const [activeSection, setActiveSection] = useState("top");
         <button
          onClick={() => {
   const el = document.getElementById("books");
-  const yOffset = -0; // wysokość navbara
+  const yOffset = -350; // wysokość navbara
 
   if (el) {
     const y =
