@@ -653,6 +653,15 @@ const customBooks = [
 const allBooks = customBooks;
 
 export default function Page() {
+  const scrollToSection = (id: string) => {
+  const el = document.getElementById(id);
+  if (!el) return;
+
+  const yOffset = -120;
+  const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+  window.scrollTo({ top: y, behavior: "smooth" });
+};
 const [lang, setLang] = useState<"en" | "pl">("en");
 
 type TranslationKey = keyof typeof translations["en"];
@@ -777,15 +786,26 @@ const [activeSection, setActiveSection] = useState("top");
 </div>
 </div>
 
-            <a href="#top" className="hidden md:flex items-center gap-2 text-black hover:text-orange-600 transition">
-              🏠 <span>{t("home")}</span>
-            </a>
-            <a href="#top" className="hidden md:flex items-center gap-2 text-black hover:text-orange-600 transition">
-              📚 <span>{t("books")}</span>
-            </a>
-            <a href="#top" className="hidden md:flex items-center gap-2 text-black hover:text-orange-600 transition">
-              ⭐ <span>{t("about")}</span>
-            </a>
+            <a
+  onClick={() => scrollToSection("top")}
+  className="hidden md:flex items-center gap-2 text-black hover:text-orange-600 transition cursor-pointer"
+>
+  🏠 <span>{t("home")}</span>
+</a>
+
+<a
+  onClick={() => scrollToSection("books")}
+  className="hidden md:flex items-center gap-2 text-black hover:text-orange-600 transition cursor-pointer"
+>
+  📚 <span>{t("books")}</span>
+</a>
+
+<a
+  onClick={() => scrollToSection("about")}
+  className="hidden md:flex items-center gap-2 text-black hover:text-orange-600 transition cursor-pointer"
+>
+  ⭐ <span>{t("about")}</span>
+</a>
           </div>
 
         </div>
@@ -1096,7 +1116,7 @@ const [activeSection, setActiveSection] = useState("top");
         <button
          onClick={() => {
   const el = document.getElementById("books");
-  const yOffset = -400; // wysokość navbara
+  const yOffset = -0; // wysokość navbara
 
   if (el) {
     const y =
