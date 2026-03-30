@@ -802,7 +802,7 @@ const [activeSection, setActiveSection] = useState("top");
 
         {/* HERO */}
         <div id="top" className="max-w-6xl mx-auto px-6 py-32 text-center">
-          <h2 className="text-6xl font-bold mb-6 text-white drop-shadow-[0_8px_30px_rgba(0,0,0,0.8)]">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white drop-shadow-[0_8px_30px_rgba(0,0,0,0.8)]">
             {t("heroTitle")}
           </h2>
 
