@@ -891,7 +891,7 @@ const [activeSection, setActiveSection] = useState("top");
                     <img src={book.image} className="h-[200px] object-contain" />
                   </div>
 
-                  <div className="mt-2 flex justify-center">
+                  <div className="mt-2 flex justify-center relative z-10">
   <a
     href={`https://www.amazon.com/dp/${book.asin}`}
     target="_blank"
@@ -903,7 +903,7 @@ const [activeSection, setActiveSection] = useState("top");
   </a>
 </div>
 
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center bg-black/80 rounded-xl text-center px-2">
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center bg-black/80 rounded-xl text-center px-2 pointer-events-none md:pointer-events-auto">
                     <p className="text-white text-xs">
                         Ages: {book.age}
                     </p>
