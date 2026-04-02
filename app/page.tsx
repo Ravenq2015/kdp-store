@@ -41,7 +41,7 @@ Moja kolekcja obejmuje szeroki wybór treści — od kolorowanek i zadań po zes
 
 Moje książki wspierają rozwój, koncentrację i kreatywność na każdym etapie.
 
-Moja misją jest prosta — tworzyć książki, które dzieci kochają.`,
+Moja misja jest prosta — tworzyć książki, które dzieci kochają.`,
   },
 };
 
