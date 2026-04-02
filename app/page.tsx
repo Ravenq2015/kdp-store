@@ -897,7 +897,7 @@ const [activeSection, setActiveSection] = useState("top");
     target="_blank"
     className="w-full"
   >
-    <button className="w-full bg-orange-500 text-white text-xs py-2 rounded-lg shadow-md hover:bg-orange-600 transition">
+    <button className="w-full bg-orange-500 text-white text-xs py-2 rounded-lg shadow-md hover:bg-orange-600 transition md:hidden">
       {t("view")}
     </button>
   </a>
