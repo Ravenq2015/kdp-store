@@ -1141,8 +1141,6 @@ const [activeSection, setActiveSection] = useState("top");
   }
 
 `}</style>
-✅ TERAZ SPRAW
-
        </div>
 
       {showTop && (
