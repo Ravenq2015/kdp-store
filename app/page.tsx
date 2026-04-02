@@ -891,6 +891,18 @@ const [activeSection, setActiveSection] = useState("top");
                     <img src={book.image} className="h-[200px] object-contain" />
                   </div>
 
+                  <div className="mt-2 flex justify-center">
+  <a
+    href={`https://www.amazon.com/dp/${book.asin}`}
+    target="_blank"
+    className="w-full"
+  >
+    <button className="w-full bg-orange-500 text-white text-xs py-2 rounded-lg shadow-md hover:bg-orange-600 transition">
+      {t("view")}
+    </button>
+  </a>
+</div>
+
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center bg-black/80 rounded-xl text-center px-2">
                     <p className="text-white text-xs">
                         Ages: {book.age}
