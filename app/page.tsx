@@ -888,8 +888,16 @@ const [activeSection, setActiveSection] = useState("top");
                   <div className="absolute inset-0 bg-black/20 blur-xl translate-y-6 rounded-xl"></div>
 
                   <div className="relative bg-white/90 backdrop-blur-md p-3 rounded-xl shadow-2xl border border-white/40">
-                    <img src={book.image} className="h-[200px] object-contain" />
-                  </div>
+  {/* LAZY LOADING */}
+  <img
+    src={book.image}
+    loading="lazy"
+    className="h-[200px] object-contain cursor-pointer"
+    onClick={() => {
+      setActiveSample(book);
+      setCurrentSlide(0);
+    }}  />
+</div>
 
                   <div className="mt-2 flex justify-center relative z-10">
   <a
