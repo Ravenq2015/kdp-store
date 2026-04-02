@@ -905,7 +905,7 @@ const [activeSection, setActiveSection] = useState("top");
     target="_blank"
     className="w-full"
   >
-    <button className="w-full bg-orange-500 text-white text-xs py-2 rounded-lg shadow-md hover:bg-orange-600 transition md:hidden">
+    <button className="w-full bg-orange-500 text-white text-xs py-2 rounded-lg shadow-md hover:bg-orange-600 transition mobile-only">
       {t("view")}
     </button>
   </a>
@@ -1089,46 +1089,59 @@ const [activeSection, setActiveSection] = useState("top");
   </div>
 )}
 
-        <style jsx>{`
-          .perspective { perspective: 1000px; }
-          .transform-style { transform-style: preserve-3d; }
-          .group-hover\\:rotate-y-12:hover { transform: rotateY(12deg); }
+     <style jsx>{`
+  .perspective { perspective: 1000px; }
+  .transform-style { transform-style: preserve-3d; }
+  .group-hover\\:rotate-y-12:hover { transform: rotateY(12deg); }
 
-          @keyframes gradientMove {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-           }
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 
-          .animate-gradient {
-          background-size: 200% 200%;
-          background-position: 0% 50%;
-          animation: gradientMove 6s ease infinite;
-          }
+  .animate-gradient {
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+    animation: gradientMove 6s ease infinite;
+  }
 
-          @keyframes float1 {
-            0% { transform: translateY(0px) }
-            50% { transform: translateY(-10px) }
-            100% { transform: translateY(0px) }
-          }
+  @keyframes float1 {
+    0% { transform: translateY(0px) }
+    50% { transform: translateY(-10px) }
+    100% { transform: translateY(0px) }
+  }
 
-          @keyframes float2 {
-            0% { transform: translateY(0px) }
-            50% { transform: translateY(-6px) }
-            100% { transform: translateY(0px) }
-          }
+  @keyframes float2 {
+    0% { transform: translateY(0px) }
+    50% { transform: translateY(-6px) }
+    100% { transform: translateY(0px) }
+  }
 
-          @keyframes float3 {
-            0% { transform: translateY(0px) }
-            50% { transform: translateY(-14px) }
-            100% { transform: translateY(0px) }
-          }
+  @keyframes float3 {
+    0% { transform: translateY(0px) }
+    50% { transform: translateY(-14px) }
+    100% { transform: translateY(0px) }
+  }
 
-          .animate-float1 { animation: float1 4s ease-in-out infinite; }
-          .animate-float2 { animation: float2 5s ease-in-out infinite; }
-          .animate-float3 { animation: float3 6s ease-in-out infinite; }
+  .animate-float1 { animation: float1 4s ease-in-out infinite; }
+  .animate-float2 { animation: float2 5s ease-in-out infinite; }
+  .animate-float3 { animation: float3 6s ease-in-out infinite; }
 
-        `}</style>
+  /* 🔥 MOBILE ONLY BUTTON */
+  .mobile-only {
+    display: block;
+  }
+
+  /* 💻 jeśli urządzenie MA hover (czyli komputer) */
+  @media (hover: hover) and (pointer: fine) {
+    .mobile-only {
+      display: none;
+    }
+  }
+
+`}</style>
+✅ TERAZ SPRAW
 
        </div>
 
