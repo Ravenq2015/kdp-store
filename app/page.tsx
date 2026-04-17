@@ -228,6 +228,14 @@ const customBooks = [
     image: "/covers/book_12.jpg",
     samples: getSamples("book12"),
   },
+
+
+
+
+
+
+
+
   {
     title: "Colorful Animal Alphabet",
     categories: "Coloring",
@@ -583,7 +591,7 @@ const customBooks = [
     title: "Tosia i tajemnica emocji",
     categories: "Premium",
     age: "3-7",
-    pages: 82,
+    pages: 95,
     asin: "B0G1RXBF5H",
     image: "/covers/book55.jpg",
     samples: getSamples("book55"),
@@ -597,59 +605,41 @@ const customBooks = [
     image: "/covers/book56.jpg",
     samples: getSamples("book56"),
   },
-   {
-    title: "Student Kitchen on a Budget",
-    categories: "Kitchen",
-    age: "14-18",
-    pages: 135,
-    asin: "B0FQB6PJKL",
-    image: "/covers/book58.jpg",
-    samples: getSamples("book57"),
-  },
      {
     title: "Tosia i potworek strachu",
     categories: ["Premium", "Polish edition"],
     age: "3-7",
     pages: 101,
     asin: "B0G2RQ22VS",
-    image: "/covers/book57.jpg",
+    image: "/covers/book59.jpg",
     samples: getSamples("book58"),
   },
-      {
-    title: "Tosia & the Scary Monster",
-    categories: "Premium",
-    age: "4-8",
-    pages: 101,
-    asin: "B0G6Y9SQK1",
-    image: "/covers/book58.jpg",
-    samples: getSamples("book60"),
-  },
-      {
+    {
     title: "Mandala Therapy",
     categories: "Mandalas",
     pages: 99,
     asin: "B0G4LSB56Y",
-    image: "/covers/book59.jpg",
-    samples: getSamples("book61"),
+    image: "/covers/book61.jpg",
+    samples: getSamples("book59"),
   },
       {
     title: "Animal Mandalas",
     categories: "Mandalas",
     pages: 100,
     asin: "B0G4R8JMZG",
-    image: "/covers/book60.jpg",
-    samples: getSamples("book62"),
+    image: "/covers/book62.jpg",
+    samples: getSamples("book61"),
   },
-      {
-    title: "Animal Head Mandalas",
-    categories: "Mandalas",
-    pages: 100,
-    asin: "B0G4VZL3PJ",
-    image: "/covers/book61.jpg",
+     {
+    title: "Student Kitchen on a Budget",
+    categories: "Kitchen",
+    age: "14-18",
+    pages: 135,
+    asin: "B0FQB6PJKL",
+    image: "/covers/book58.jpg",
     samples: getSamples("book63"),
-
-  }
-     ];
+  },
+    ];
 const allBooks = customBooks;
 
 export default function Page() {
