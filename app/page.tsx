@@ -612,7 +612,7 @@ const customBooks = [
     age: "3-7",
     pages: 101,
     asin: "B0G2RQ22VS",
-    image: "/covers/book59.jpg",
+    image: "/covers/book57.jpg",
     samples: getSamples("book58"),
   },
       {
@@ -621,7 +621,7 @@ const customBooks = [
     age: "4-8",
     pages: 101,
     asin: "B0G6Y9SQK1",
-    image: "/covers/book60.jpg",
+    image: "/covers/book58.jpg",
     samples: getSamples("book60"),
   },
       {
@@ -629,7 +629,7 @@ const customBooks = [
     categories: "Mandalas",
     pages: 99,
     asin: "B0G4LSB56Y",
-    image: "/covers/book61.jpg",
+    image: "/covers/book59.jpg",
     samples: getSamples("book61"),
   },
       {
@@ -637,7 +637,7 @@ const customBooks = [
     categories: "Mandalas",
     pages: 100,
     asin: "B0G4R8JMZG",
-    image: "/covers/book62.jpg",
+    image: "/covers/book60.jpg",
     samples: getSamples("book62"),
   },
       {
@@ -645,7 +645,7 @@ const customBooks = [
     categories: "Mandalas",
     pages: 100,
     asin: "B0G4VZL3PJ",
-    image: "/covers/book63.jpg",
+    image: "/covers/book61.jpg",
     samples: getSamples("book63"),
 
   }
